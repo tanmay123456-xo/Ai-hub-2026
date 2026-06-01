@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub 2026 | The World's Leading AI Directory</title>
+    <meta name="description" content="Access the world's best AI tools including ChatGPT, Claude, Gemini, and more from one centralized hub.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <h2>AI Hub 2026</h2>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-microchip"></i> AI Hub <span>2026</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#directory">Directory</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="container hero-content">
+            <h1 class="main-title">AI Hub <span class="year">2026</span></h1>
+            <p class="subtitle">Access the World's Leading AI Platforms from One Place</p>
+            
+            <!-- Search Bar -->
+            <div class="search-wrapper">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search AI tools (e.g., ChatGPT, Coding, Image)...">
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-card glass">
+                    <h3 id="stat-assistants">0</h3>
+                    <p>AI Assistants</p>
+                </div>
+                <div class="stat-card glass">
+                    <h3 id="stat-coding">0</h3>
+                    <p>Coding AIs</p>
+                </div>
+                <div class="stat-card glass">
+                    <h3 id="stat-companies">0</h3>
+                    <p>Top Companies</p>
+                </div>
+                <div class="stat-card glass">
+                    <h3 id="stat-dev">0</h3>
+                    <p>Dev Platforms</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Directory -->
+    <main id="directory" class="container">
+        
+        <!-- Filter Tabs -->
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="featured">Featured</button>
+            <button class="filter-btn" data-category="Chat">Chatbots</button>
+            <button class="filter-btn" data-category="Coding">Coding</button>
+            <button class="filter-btn" data-category="Open Source">Open Source</button>
+            <button class="filter-btn" data-category="Company">Companies</button>
+            <button class="filter-btn" data-category="Dev">Dev Platform</button>
+        </div>
+
+        <!-- Favorites Toggle -->
+        <div class="results-header">
+            <span id="result-count">Showing all tools</span>
+            <button id="fav-filter-btn" class="secondary-btn"><i class="fa-regular fa-heart"></i> Favorites</button>
+        </div>
+
+        <!-- AI Grid -->
+        <div id="ai-grid" class="grid">
+            <!-- Cards injected via JS -->
+        </div>
+
+        <!-- No Results -->
+        <div id="no-results" class="hidden">
+            <i class="fa-solid fa-robot"></i>
+            <h3>No AI tools found</h3>
+            <p>Try adjusting your search or filters.</p>
+        </div>
+    </main>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top" class="hidden"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-microchip"></i> AI Hub 2026
+            </div>
+            <p>&copy; 2026 AI Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://openai.com" target="_blank">OpenAI</a>
+                <a href="https://google.com" target="_blank">Google</a>
+                <a href="https://anthropic.com" target="_blank">Anthropic</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
